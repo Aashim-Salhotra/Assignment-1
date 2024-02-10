@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles01.css">
+
+    <!--adding the title-->
+
+    <title> My Programming Assignment</title>
+
+<style>
+    @font-face {
+        font-family: 'Justice_League';
+        src: url(font/JUSTICE_LEAGUE.ttf);
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url("TIMELINE_WALL.jpeg");
+        background-size: cover;
+        color: rgb(221, 242, 255);
+        background-color: #8b000071; 
+    }
+    
+    
+    header {
+        background-color: rgb(53, 0, 0);
+        color: rgb(221, 242, 255);
+        text-align: center;
+        padding: 1em 0;
+        text-shadow: rgb(221, 242, 255);
+        font-size:x-large;
+        font-family: 'Justice_League', sans-serif;
+        font-weight: 900;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color: #8B0000;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    nav a:hover {
+        background-color: #9c8200;
+    }
+    
+    section {
+        padding: 20px;
+        margin: 20px;
+        
+    }
+    
+    .contact_info {
+        color: #ffeb52;
+        text-align: center;
+        font-size: xx-large;
+    }
+    
+    .image {
+        display: block;
+        border-radius: 50%;
+        size: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .about-text {
+        text-align: center;
+        align-content: center;
+    }
+    
+    .portfolio-cards {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .project-card {
+        width: 30%;
+        /*border: 1px solid #ccc; */
+        background-color: #00568b85;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #ffeb52;
+    }
+    
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input:focus,
+    textarea:focus {
+        border-color: #555;
+    }
+    
+    button {
+        background-color: #333;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #555;
+    }
+    
+    @media (max-width: 768px) {
+        .portfolio-cards {
+            flex-direction: column;
+        }
+    }
+    
+</style>
+
+</head>
+
+<body>
+    <header>
+        <!--adding the header and navigation bar section-->
+
+        <h1 style="text-decoration: overline;">MY PROGRAMMING ASSIGNMENT</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!--adding the about section-->
+
+    <section id="about">
+        <h2 align="center">About Me</h2>
+        <img class="image" src="My_picture02.jpg" alt="My Photo" height="250px" width="250px" align="center">
+        <p class="about-text">Hello, I'm Aashim Salhotra, currently a Computer Programming student in Lambton College in
+            Toronto, (CPCT Co-op)A skillful video editor capable of producing high quality trailers for TV shows and
+            movies, advertisements for products and services, music videos, story telling videos and video edits for
+            commercial and social media usage. And a keen interest in photography and videography allows to expand the
+            creative skill set.</p>
+    </section>
+    <hr>
+    <!--adding the portfolio section-->
+
+    <section id="portfolio">
+        <h1 style="font-size: xx-large;" align="center">My Portfolio</h1>
+        <img class="image" src="logo_RED.jpg" height="100px" width="100px">
+
+        <div class="portfolio-cards">
+            <div class="project-card">
+                <h3>Project 1 - "THE WAR : HEROES"</h3>
+                <img src="HEROES_THUMBNAIL.jpg" height="188px" width="335px">
+                <p>I created this video to show the perspective of heroes in a war.</p>
+                <a style="color: rgb(221, 242, 255);" href="https://youtu.be/MsUw9Hu9WFQ?si=cLPAf7JH9nKmvszt">View
+                    Details (YouTube link)</a>
+            </div>
+
+
+            <div class="project-card">
+                <h3>Project 2 - "THE WAR : VILLAINS"</h3>
+                <img src="VILLAINS_THUMBNAIL.jpg" height="188px" width="335px">
+                <p>I created this video to show the perspective of villains in a war.</p>
+                <a style="color: rgb(221, 242, 255);" href="https://youtu.be/obDpEiWywA0?si=gswo0gNtFMUGozHa">View
+                    Details (YouTube link)</a>
+            </div>
+
+
+            <div class="project-card">
+                <h3>Project 3 - "MARVEL | THE PLAN "</h3>
+                <img src="MARVEL - THE PLAN.jpg" height="188px" width="335px">
+                <p>I created this video to show the MCU (Marvel Cinematic Universe) in a way that "TENET" was shown.</p>
+                <a style="color: rgb(221, 242, 255);" href="https://youtu.be/lDSWPuydoEU?si=asYahbYLBnaE5XBA">View
+                    Details (YouTube link)</a>
+            </div>
+
+
+        </div>
+    </section>
+    <hr>
+
+    <!--adding the contact section-->
+
+    <section id="contact">
+        <h2 class="contact_info">Contact Me</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+
+</html>
